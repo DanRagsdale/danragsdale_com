@@ -1,0 +1,10 @@
+.carousel {
+	overflow: visible;
+	white-space: nowrap;
+}
+
+.image {
+	width: auto;
+	height: 600;
+	opacity: 1;
+}

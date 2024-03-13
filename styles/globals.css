@@ -30,7 +30,7 @@ body {
 
 /* The page specific content. Excludes the navbar and footer.*/
 main {
-/*
+	/*
   padding: 5rem 0;
   */
   flex: 1;
@@ -40,13 +40,4 @@ main {
   justify-content: center;
   align-items: center;
   */
-}
-
-.carousel {
-	overflow: auto;
-	white-space: nowrap;
-}
-
-.carousel img {
-	display: inline;	
 }
