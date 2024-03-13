@@ -1,6 +1,16 @@
+.carouselContainer {
+	overflow-x: clip;
+}
+
 .carousel {
-	overflow: visible;
+	width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+	/*
+	overflow: auto;
+  padding-left: 5vw;
 	white-space: nowrap;
+	*/
 }
 
 .image {

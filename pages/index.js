@@ -66,16 +66,18 @@ export default function Home() {
 
 	return (
 	<>
-		<div id='carousel' className={styles.carousel}>
-			{images.map((image, index) => (
-				<img
-					id = 'test_image'	
-					key={index}
-					src={`/carousel/${image}`}
-					alt={`Image ${index + 1}`}
-					className={styles.image}
-				/>
-			))}
+		<div className={styles.carouselContainer}>
+			<div id='carousel' className={styles.carousel}>
+				{images.map((image, index) => (
+					<img
+						id = 'test_image'	
+						key={index}
+						src={`/carousel/${image}`}
+						alt={`Image ${index + 1}`}
+						className={styles.image}
+					/>
+				))}
+			</div>
 		</div>
 
 		<Header title="Welcome to danragsdale.com!" />
