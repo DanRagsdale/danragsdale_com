@@ -34,7 +34,7 @@ export default function Home() {
 		};
 		
 		// Animation code
-		let durationAnimation = 1000; // ms
+		let durationAnimation = 1500; // ms
 		let activeAnimation = `transform ${durationAnimation}ms ease-in-out`;
 		const changeActiveAnimation = off => {
 			carousel.style.transition = off === false ? "" : activeAnimation;
@@ -42,7 +42,7 @@ export default function Home() {
 
 		updateSlideTransformX();
 
-		let interval = 5000;
+		let interval = 6000;
 		setInterval(function() {
 			// enable animation
 			if (index === 1) changeActiveAnimation()
@@ -66,22 +66,29 @@ export default function Home() {
 
 	return (
 	<>
-		<div id='carousel' className={styles.carousel}>
-			{images.map((image, index) => (
-				<img
-					id = 'test_image'	
-					key={index}
-					src={`/carousel/${image}`}
-					alt={`Image ${index + 1}`}
-					className={styles.image}
-				/>
-			))}
+		<div className={styles.carouselContainer}>
+			<div id='carousel' className={styles.carousel}>
+				{images.map((image, index) => (
+					<img
+						id = 'test_image'	
+						key={index}
+						src={`/carousel/${image}`}
+						alt={`Image ${index + 1}`}
+						className={styles.image}
+					/>
+				))}
+			</div>
+			<div className={styles.overlay}></div>
+			<div className={styles.booking}>
+					<h1>Let's have an adventure!</h1>
+			</div>
 		</div>
-
-		<Header title="Welcome to danragsdale.com!" />
-		<p className="description">
-			<Link href="/second_page">Check out this other page!</Link>
-		</p>
+		<div className={styles.textBody}>
+			<Header title="Welcome to danragsdale.com!" />
+			<p className="description">
+				<Link href="/second_page">Check out this other page!</Link>
+			</p>
+		</div>
 	</>
 	)
 }
