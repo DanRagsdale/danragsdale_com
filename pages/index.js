@@ -9,6 +9,7 @@ import styles from '/components/index.module.css';
 
 export default function Home() {
 	// TODO dynamically populate this from a larger pool of images
+	// TODO dynamically adjust viewable length to account for screen size
 	const [images, setImages] = useState([
 		'monkey_face.jpg', // Copy of Final
 		'rainier.jpg',
@@ -81,12 +82,13 @@ export default function Home() {
 			<div className={styles.overlay}></div>
 			<div className={styles.booking}>
 					<h1>Let's have an adventure!</h1>
+					<Link href="/schedule" className={styles.bookingButton}>Schedule Now!</Link>
 			</div>
 		</div>
 		<div className={styles.textBody}>
 			<Header title="Welcome to danragsdale.com!" />
 			<p className="description">
-				<Link href="/second_page">Check out this other page!</Link>
+				<Link href="/schedule">Check out this other page!</Link>
 			</p>
 		</div>
 	</>

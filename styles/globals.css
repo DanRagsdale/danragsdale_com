@@ -1,3 +1,12 @@
+:root {
+	--light: #F2E8CF;
+	
+	--bgDark:#0D1B2A;
+	--bgLight: #778DA9;
+
+	--accent:#FF8600;
+}
+
 /*
 * https://coolors.co/palette/0d1b2a-1b263b-415a77-778da9-e0e1dd
 */
@@ -20,8 +29,8 @@ body {
   display: flex;
   flex-direction: column;
 
-  color: #E0E1DD;
-  background-color: #0D1B2A;
+  color: var(--light);
+  background-color: var(--bgDark);
   /*
   justify-content: center;
   align-items: center;
@@ -30,13 +39,7 @@ body {
 
 /* The page specific content. Excludes the navbar and footer.*/
 main {
-	/*
-  padding: 5rem 0;
-  */
   flex: 1;
   display: flex;
   flex-direction: column;
-	/*
-  align-items: center;
-	*/
 }
