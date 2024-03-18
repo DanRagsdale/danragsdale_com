@@ -9,6 +9,7 @@ import styles from '/components/index.module.css';
 
 export default function Home() {
 	// TODO dynamically populate this from a larger pool of images
+	// TODO dynamically adjust viewable length to account for screen size
 	const [images, setImages] = useState([
 		'monkey_face.jpg', // Copy of Final
 		'rainier.jpg',
@@ -34,7 +35,7 @@ export default function Home() {
 		};
 		
 		// Animation code
-		let durationAnimation = 1000; // ms
+		let durationAnimation = 1500; // ms
 		let activeAnimation = `transform ${durationAnimation}ms ease-in-out`;
 		const changeActiveAnimation = off => {
 			carousel.style.transition = off === false ? "" : activeAnimation;
@@ -42,7 +43,7 @@ export default function Home() {
 
 		updateSlideTransformX();
 
-		let interval = 5000;
+		let interval = 6000;
 		setInterval(function() {
 			// enable animation
 			if (index === 1) changeActiveAnimation()
@@ -78,12 +79,18 @@ export default function Home() {
 					/>
 				))}
 			</div>
+			<div className={styles.overlay}></div>
+			<div className={styles.booking}>
+					<h1>Let's have an adventure!</h1>
+					<Link href="/schedule" className={styles.bookingButton}>Schedule Now!</Link>
+			</div>
 		</div>
-
-		<Header title="Welcome to danragsdale.com!" />
-		<p className="description">
-			<Link href="/second_page">Check out this other page!</Link>
-		</p>
+		<div className={styles.textBody}>
+			<Header title="Welcome to danragsdale.com!" />
+			<p className="description">
+				<Link href="/schedule">Check out this other page!</Link>
+			</p>
+		</div>
 	</>
 	)
 }
