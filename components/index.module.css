@@ -3,6 +3,16 @@
 	overflow-x: clip;
 }
 
+.carousel {
+	overflow: visible;
+	white-space: nowrap;
+}
+
+.image {
+	width: auto;
+	vertical-align: middle;
+}
+
 .overlay {
   content: "";
   display: block;
@@ -13,18 +23,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Change the color and opacity as needed */
 }
-
-.carousel {
-	overflow: visible;
-	white-space: nowrap;
-}
-
-.image {
-	width: auto;
-	height: 600;
-	opacity: 1;
-}
-
 .booking {
 	position: absolute;
 	left: 50%;
@@ -59,5 +57,6 @@
 }
 
 .textBody *{
+	padding-left: 5rem;
 	text-align: center;
 }
