@@ -4,19 +4,32 @@
 	padding: 0;
 	overflow: hidden;
 	background-color: #1B263B;
+	height: 100px;
 }
 
 .nav_bar li {
 	float: left;
 	display: inline;
+	height: 100%;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 .nav_bar a {
 	display: block;
 	color: #E0E1DD;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 16px;
 	text-decoration: none;
+	height: 100%;
+	position: relative;
+}
+
+.center {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 100%;
 }
 
 .nav_bar a:hover {
