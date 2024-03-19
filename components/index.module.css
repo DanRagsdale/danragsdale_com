@@ -21,7 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Change the color and opacity as needed */
+  background-color: rgba(0, 0, 0, 0.3); /* Change the color and opacity as needed */
 }
 .booking {
 	position: absolute;
@@ -56,7 +56,27 @@
 	background-color: var(--bgLight);
 }
 
-.textBody *{
-	padding-left: 5rem;
+.textBody {
+	margin: auto;
+	max-width: 65rem;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 1.6em;
+	font-size: 1.1em;
+}
+
+.bottomBookingButton {
+	background-color: var(--accent);
+	color: var(--light);
 	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.063rem;
+	font-weight: 700;
+	padding: 0.5rem 1.5rem;
+	margin: 0.5rem 0.5rem 0.8rem 0.5rem;
+	transition: background-color 0.3s ease 0s;
+	display: block;
+
+	text-decoration: none;
 }
