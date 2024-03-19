@@ -9,7 +9,7 @@ export default function Layout({ children }) {
 		<div className="container">
 			<Head>
 				<title>DanRagsdale</title>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/favicon.png" />
 			</Head>
 
 			<NavBar />
