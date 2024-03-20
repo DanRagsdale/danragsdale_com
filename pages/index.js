@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import Carousel from '@components/Carousel'
 
-import styles from '/components/index.module.css'; 
+import styles from '@styles/index.module.css'; 
 
 export default function Home() {
 	return (
