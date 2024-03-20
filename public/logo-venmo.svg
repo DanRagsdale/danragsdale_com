@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64"
+   height="64"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="logo-venmo.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     inkscape:zoom="9.6232814"
+     inkscape:cx="16.470473"
+     inkscape:cy="35.330984"
+     inkscape:window-width="1916"
+     inkscape:window-height="1041"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <g
+     transform="matrix(0.15216359,0,0,0.15216359,-7.2582096,61.519739)"
+     id="g6">
+    <path
+       d="m 410.26802,-377.00002 c 13.32,21.96 19.296,44.604 19.296,73.2 0,91.2 -77.844,209.640001 -141.024,292.800006 h -144.264 l -57.839996,-346.020006 126.359996,-12 30.72,246.204 c 28.56,-46.584 63.876,-119.784 63.876,-169.656 0,-27.324 -4.68,-45.9 -12,-61.2 z"
+       fill="#ffffff"
+       id="path4"
+       style="stroke-width:1.2" />
+  </g>
+</svg>
