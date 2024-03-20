@@ -9,6 +9,7 @@
 }
 
 .booking h1 {
+	text-wrap: nowrap;
 	padding: 5px;
 	border-radius: 5px;
 	color: var(--light);
@@ -33,6 +34,7 @@
 
 .textBody {
 	margin: auto;
+	padding: 0 2em;
 	max-width: 65rem;
   display: flex;
 	flex-direction: column;
