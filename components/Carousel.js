@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 
 import styles from '@components/Carousel.module.css'; 
 
-export default function Carousel({ images, animationDuration = 1500, interval = 6000 }) {
+export default function Carousel({ images, animationDuration = 1500, interval = 6000, height = 600 }) {
 	// TODO dynamically populate this from a larger pool of images
 	// TODO dynamically adjust viewable length to account for screen size
 	// TODO allow for user provided alt text
@@ -65,6 +65,7 @@ export default function Carousel({ images, animationDuration = 1500, interval = 
 						key={index}
 						src={`/carousel/${image}`}
 						alt={`Image ${index + 1}`}
+						height={height}
 						className={styles.image}
 					/>
 				))}
