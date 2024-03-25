@@ -1,0 +1,26 @@
+.paceCalc > table {
+	border-spacing: 0;
+}
+.header {
+	background-color: #1B263B;
+	color: #F2E8CF;
+	font-weight: bold;
+	text-align: center;
+}
+.paceCalc > td {
+	padding: 7px 4px;
+}
+.subTable {
+	padding: 0px 5px 0px 0px;
+}
+
+.darkRow {
+	background-color: #415A77;
+}
+.lightRow {
+	background-color: #778DA9;
+}
+
+.paceCalc > input {
+	width: 8em;
+}

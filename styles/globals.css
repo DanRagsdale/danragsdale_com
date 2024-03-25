@@ -38,6 +38,18 @@ body {
   */
 }
 
+.textBody {
+	margin: 0 auto;
+	padding: 0 2em;
+	max-width: 65rem;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+	line-height: 1.6em;
+	font-size: 1.1em;
+}
+
 /* The page specific content. Excludes the navbar and footer.*/
 main {
   flex: 1;
