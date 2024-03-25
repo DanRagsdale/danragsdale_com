@@ -17,7 +17,6 @@ export default function NavBar() {
 	useEffect(() => {
     function handleResize() {
 			var newWidth = Math.max(Math.min(window.innerWidth * 0.04, 100), 40);
-			console.log(window.innerWidth);
       setImSize({
         width: newWidth,
         height: newWidth * aspectRatio,
