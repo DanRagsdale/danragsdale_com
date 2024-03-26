@@ -2,6 +2,9 @@
 	--light: #F2E8CF;
 	
 	--bgDark:#0D1B2A;
+	--bgDark1: #1B263B;
+
+	--bgLight1: #415A77;
 	--bgLight: #778DA9;
 
 	--accent:#FF8600;
@@ -16,6 +19,7 @@ body {
   padding: 0;
   margin: 0;
 	height: 100%;
+	width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -26,9 +30,10 @@ body {
 
 /* The overall container for a given page */
 .container {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 	min-height: 100vh;
+	min-width: 100vw;
 
   color: var(--light);
   background-color: var(--bgDark);
