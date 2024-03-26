@@ -1,0 +1,14 @@
+.gridContainer {
+	width: 100%;
+  display: grid;
+	grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, 400px);
+	justify-content: space-evenly;
+
+	gap: 2em;
+	/*
+  grid-template-rows: repeat(auto-fill, 100px);
+  grid-auto-columns: 100px;
+  grid-auto-rows: 100px;
+	*/
+}
