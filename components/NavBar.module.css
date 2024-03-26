@@ -1,3 +1,9 @@
+.nav_bar {
+	position: sticky;
+	left: 0%;
+	width: 100%;
+}
+
 .nav_bar ul {
 	list-style-type: none;
 	margin: 0;

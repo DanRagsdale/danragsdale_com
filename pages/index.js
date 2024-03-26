@@ -7,21 +7,20 @@ import styles from '@styles/index.module.css';
 export default function Home() {
 	return (
 	<>
-		<div>
-			<Carousel 
-				images={[
-					'rainier.jpg',
-					'moab_traverse.jpg',
-					'rappel.jpg',
-					'25_short.jpg',
-					'monkey_face.jpg',]}
-			/>
-
+		<Carousel 
+			images={[
+				'rainier.jpg',
+				'moab_traverse.jpg',
+				'rappel.jpg',
+				'25_short.jpg',
+				'monkey_face.jpg',]}
+		>
 			<div className={styles.booking}>
 					<h1>Ready for Adventure!</h1>
 					<Link href="/schedule" className={styles.bookingButton}>Schedule Now!</Link>
 			</div>
-		</div>
+		</Carousel>
+
 		<div className={styles.textBody}>
 			<em>The following is placeholder text, and does not reflect my actual services or certifications.</em>
 			<h1>Climbing, Skiing, Mountaineering</h1>

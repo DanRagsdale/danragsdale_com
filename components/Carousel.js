@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 
 import styles from '@components/Carousel.module.css'; 
 
-export default function Carousel({ images, animationDuration = 1500, interval = 6000, height = 600 }) {
+export default function Carousel({ children, images, animationDuration = 1500, interval = 6000, height = 600 }) {
 	// TODO dynamically populate this from a larger pool of images
 	// TODO dynamically adjust viewable length to account for screen size
 	// TODO allow for user provided alt text
@@ -71,6 +71,7 @@ export default function Carousel({ images, animationDuration = 1500, interval = 
 				))}
 			</div>
 			<div className={styles.overlay}></div>
+			{children}
 		</div>
 	</>
 	)
