@@ -52,7 +52,7 @@ export default function NavBar() {
 				<li><Link href="/ski"><div className={styles.center}>Ski</div></Link></li>
 
 				<li style={{marginLeft:"auto"}}><Link href="/code"><div className={styles.center}>Code</div></Link></li>
-				<li><Link href="/"><div className={styles.center}>Blog</div></Link></li>
+				<li><Link href="/blog"><div className={styles.center}>Blog</div></Link></li>
 			</ul>
 		</div>
 	)
