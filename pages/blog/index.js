@@ -1,12 +1,14 @@
-import fs from "fs";
-import Link from "next/link";
+import fs from 'fs';
+import Link from 'next/link';
+import Image from 'next/image';
 
 import matter from 'gray-matter';
+import styles from '@styles/blog.module.css';
 
 function getPostMetadata() {
-	const folder = "posts/";
+	const folder = 'posts/';
 	const files = fs.readdirSync(folder);
-	const markdownPosts = files.filter((file) => file.endsWith(".md"));
+	const markdownPosts = files.filter((file) => file.endsWith('.md'));
 
 	const posts = markdownPosts.map((fileName) => {
 		const contents = fs.readFileSync(`posts/${fileName}`);
@@ -16,6 +18,7 @@ function getPostMetadata() {
 			title: metadata.data.title,
 			date: metadata.data.date,
 			subtitle: metadata.data.subtitle,
+			preview: metadata.data.preview,
 			slug: fileName.replace('.md', ''),
 		};
 	});
@@ -25,6 +28,11 @@ function getPostMetadata() {
 
 export async function getStaticProps() {
 	const postMetadata = getPostMetadata();
+	postMetadata.sort((a, b) => (
+		// We wanted newer posts (later alphabetically) to come first
+		b.date.localeCompare(a.date)
+	));
+
   return {
     props: {
       posts : postMetadata,
@@ -35,17 +43,28 @@ export async function getStaticProps() {
 export default function Blog({posts}) {
 	return (
 		<>
-			<div className="textBody">
-				<h1>Hello from the blog!</h1>
-
-				<div>
+			<div className='textBody'>
+				<div className={styles.postList}>
 					<ul>
 						{posts.map((data, index) => (
 							<li key={index}>
-								<Link href={`/blog/${data.slug}`}>
-									<h2>{data.title}</h2>
-								</Link>
-								<p>{data.subtitle}</p>
+									<Link
+										href={`/blog/${data.slug}`}
+										className={styles.link}>
+										<div className={styles.post}>
+											<div>
+												<h2>{data.title}</h2>
+												<p>{data.subtitle}</p>
+											</div>
+											<Image
+												id={index}
+												src={`/posts/${data.preview}`}
+												width={200}
+												height={150}
+												style={{marginLeft: "auto"}}
+												alt="Placeholder image"/>
+										</div>
+									</Link>
 							</li>
 						))}
 					</ul>

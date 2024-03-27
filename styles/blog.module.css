@@ -1,0 +1,37 @@
+.postList {
+	width: 100%;
+	align-self: start;
+}
+
+.postList ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.postList li {
+	margin: 15px 0px;
+}
+
+
+.link {
+	color: var(--light);
+	text-decoration: none;
+}
+
+
+.post {
+  border: 1px solid #eaeaea;
+	border-radius: 4px;
+	padding: 10px;
+	
+	display: flex;
+	flex-direction: row;
+}
+
+.post h2 {
+	margin: 5px 0px;
+}
+
+.post p {
+	margin: 0px;
+}

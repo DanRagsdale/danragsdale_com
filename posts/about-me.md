@@ -1,7 +1,8 @@
 ---
 title: "About Me"
-subtitle: "The climber and the coder"
+subtitle: "Climber, coder, skier, runner"
 date: "2024-03-27"
+preview: "logo.png"
 ---
 
 Thank you for checking out my website.

@@ -40,7 +40,7 @@ export default function Post({slug, raw}) {
 	return (
 		<>
 			<div className='textBody'>
-			<h1>{post.data.title}</h1>
+				<h1>{post.data.title}</h1>
 				<Markdown>
 					{post.content}
 				</Markdown>	
