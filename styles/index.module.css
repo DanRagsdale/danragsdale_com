@@ -43,6 +43,15 @@
 	font-size: 1.1em;
 }
 
+.textBody li {
+	list-style-type: none;
+	margin: 10px 0;
+}
+
+.tripOption {
+	margin: 0 0;
+}
+
 .bottomBookingButton {
 	background-color: var(--accent);
 	color: var(--light);
